@@ -8,9 +8,11 @@
     <!-- custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/withimg.css">
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <section>
             <h1>Newsletter Subscribe</h1>
@@ -18,17 +20,25 @@
         </section>
         <nav>
             <ul>
-                <li><a href="index.html" id="cssLink">CSS</a></li>
-                <li><a href="./bootstrap.html" id="bootstrapLink">Bootstrap</a></li>
-                <li><a href="./tailwind.html" id="tailwindLink">Tailwind</a></li>
+                <li><a href="index.html">CSS</a></li>
+                <li><a href="./bootstrap.html">Bootstrap</a></li>
+                <li><a href="./tailwind.html">Tailwind</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- CSS Subscribe Component -->
     <main>
         <div class="component-section">
-            <section >
-
-            </section>
+            <article id="withimg">
+                <h3>Subscribe to our newsletter</h3>
+                <p>Get our latest news and special offers.</p>
+                <form action="">
+                    <label for="email" class="hide">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Email address" required>
+                    <button type="submit">Subscribe</button>                   
+                </form>
+            </article>
         </div>
 
         <div class="component-section">
@@ -43,6 +53,7 @@
             </section>
         </div>
     </main>
+    <!-- Navbar JS active state -->
     <script src="./assets/js/nav.js"> </script>
 </body>
 
