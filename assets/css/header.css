@@ -11,8 +11,10 @@ h1 {
     font-weight: bolder;
 }
 
-h3 {
-    color: DimGrey
+p {
+    font-size: large;
+    font-weight: 500;
+    color: DimGrey;
 }
 
 nav ul {    
