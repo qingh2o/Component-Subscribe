@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/withimg.css">
+
+    <!-- Google icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -29,17 +32,19 @@
 
     <!-- CSS Subscribe Component -->
     <main>
-        <div class="component-section">
+        <section class="component-section">
             <article id="withimg">
                 <h3>Subscribe to our newsletter</h3>
                 <p>Get our latest news and special offers.</p>
                 <form action="">
-                    <label for="email" class="hide">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Email address" required>
-                    <button type="submit">Subscribe</button>                   
+                    <div id="withimg-input">                        
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                        <i id="email-icon" class="material-icons">mail_outline</i>
+                    </div>
+                    <button type="submit">Subscribe</button>
                 </form>
             </article>
-        </div>
+        </section>
 
         <div class="component-section">
             <section>
