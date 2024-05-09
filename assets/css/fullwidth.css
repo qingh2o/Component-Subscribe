@@ -1,14 +1,89 @@
-#Subscribe-fullwidth {
+#fullwidth-signle-input {
     margin: auto;
     text-align: center;
 }
 
 #h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 500;
+    padding: 0 1rem;
 }
 
 #p {
+    font-size: 1.2rem;
+    padding: 1rem;
+    
+}
+
+/* flex container (Tablet/laptop/Desktop screen)*/
+#flex-container {
+    margin: 0.5rem;  
+    display: flex;
+    /* Button: right on row */
+    flex-direction: row;
+    justify-content: center;
+}
+
+#fullwidth-input {
+    position: relative;     
+}
+
+#email-input {   
+    margin: 0.5rem;
+    padding: 12px 20px 12px 40px;
     font-size: 1rem;
-    padding: 8px;
+    border-radius: 8px;
+    min-width: 312px;
+    border: 2px solid Silver;
+}
+
+#email-input:active,
+#email-input:focus{
+    border-color: black;
+    outline: 5px solid rgba(105, 90, 205, 0.25);
+}
+
+#email-icon {
+    position: absolute;
+    /* 50% down from the top edge of its containing element (#fullwidth-input)*/
+    top: 50%; 
+
+    /* Since the top of the icon is already positioned at 50% from the top of the container, this transform moves the icon up by 50% of its own height, effectively centering it vertically. */
+    transform: translateY(-50%);
+
+    /* 16 pixels from the left edge of its containing element */
+    left: 16px;
+    color: rgb(107, 105, 105);
+}
+
+#Subscribe-button{
+    color: white;
+    margin: 0.5rem;
+    padding: 12px;
+    font-size: large;
+    font-weight: 600;
+    background-color: SlateBlue;
+    border-radius: 8px;
+    border: none;
+}
+
+#Subscribe-button:hover,
+#Subscribe-button:focus{
+    background-color: rgb(66, 51, 163);
+}
+
+/* Mobile screen*/
+@media screen and (max-width: 576px) {
+    #h2 {
+        font-size: 2.2rem;
+    }
+
+    /* Button: full screen */
+    #flex-container {
+        flex-direction: column;            
+    }  
+
+    #email-input {   
+        width:calc(100% - 20px);
+    }
 }
