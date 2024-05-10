@@ -12,12 +12,12 @@
 #p {
     font-size: 1.2rem;
     padding: 1rem;
-    
+
 }
 
 /* flex container (Tablet/laptop/Desktop screen)*/
 #flex-container {
-    margin: 0.5rem;  
+    margin: 0.5rem;
     display: flex;
     /* Button: right on row */
     flex-direction: row;
@@ -25,10 +25,10 @@
 }
 
 #fullwidth-input {
-    position: relative;     
+    position: relative;
 }
 
-#email-input {   
+#email-input {
     margin: 0.5rem;
     padding: 12px 20px 12px 40px;
     font-size: 1rem;
@@ -38,7 +38,7 @@
 }
 
 #email-input:active,
-#email-input:focus{
+#email-input:focus {
     border-color: black;
     outline: 5px solid rgba(105, 90, 205, 0.25);
 }
@@ -46,17 +46,18 @@
 #email-icon {
     position: absolute;
     /* 50% down from the top edge of its containing element (#fullwidth-input)*/
-    top: 50%; 
+    top: 50%;
 
     /* Since the top of the icon is already positioned at 50% from the top of the container, this transform moves the icon up by 50% of its own height, effectively centering it vertically. */
     transform: translateY(-50%);
 
     /* 16 pixels from the left edge of its containing element */
-    left: 16px;
+    left: 0;
+    margin-left: 20px;
     color: rgb(107, 105, 105);
 }
 
-#Subscribe-button{
+#Subscribe-button {
     color: white;
     margin: 0.5rem;
     padding: 12px;
@@ -68,7 +69,7 @@
 }
 
 #Subscribe-button:hover,
-#Subscribe-button:focus{
+#Subscribe-button:focus {
     background-color: rgb(66, 51, 163);
 }
 
@@ -80,10 +81,10 @@
 
     /* Button: full screen */
     #flex-container {
-        flex-direction: column;            
-    }  
+        flex-direction: column;
+    }
 
-    #email-input {   
-        width:calc(100% - 20px);
+    #email-input {
+        width: calc(100% - 20px);
     }
 }
