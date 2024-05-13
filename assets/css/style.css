@@ -27,12 +27,14 @@ li{
     line-height: 1.4;
 }
 
+/* Section */
 .component-section{
     background-color: white;
     padding: 5rem 0;
     margin-bottom: 4rem;
 }
 
+/* Icon label for screen reader only */
 .sr-only {
     position:absolute;
     left:-10000px;
