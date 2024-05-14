@@ -37,13 +37,13 @@ nav a {
 }
 
 nav li:hover,
-li:focus{
+nav li:focus{
     border: 0.2px solid rgba(71, 61, 139, 0.274);
     border-radius: 12px;
 }
 
 nav .active, 
-li:active{
+nav li:active{
     border: 0.2px solid DarkSlateBlue;
     border-radius: 12px;
 }

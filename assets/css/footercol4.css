@@ -4,18 +4,99 @@
     padding: 0.5rem;
 }
 
+/* ----Sitmap and Subscribe ---- */
+#sitemap-subscribe-flex {
+    display: flex;
+    /* Sitmap and Subscribe flex row*/
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.link-list-column {
+    list-style-type: none;
+}
+
+h3,
+.link-list-column li {
+    margin-bottom: 0.5rem;
+}
+
+.sitemap-link {
+    text-decoration: none;
+    /* links*/
+}
+
+.sitemap-link:hover,
+.sitemap-link:focus {
+    text-decoration: underline;
+    /* links*/
+    text-underline-offset: 3px;
+}
+
+.column {
+    /* column width 3 20% column*/
+    flex: 20%;
+}
+
+#Subscribe-column {
+    /* Subscribe column width */
+    flex: 40%;
+    /* Subscribe column offset left */
+    margin-left: 5%;
+}
+
+#flex-form {
+    display: flex;
+    gap: 0.75rem;
+    margin: 1rem 0;
+}
+
+/* input */
+#footer-email-input {
+    /* input width*/
+    width: 100%;
+    padding: 12px;
+    border: 2px solid Silver;
+    border-radius: 8px;
+}
+
+#footer-email-input:active,
+#footer-email-input:focus {
+    border-color: black;
+    outline: 5px solid rgba(105, 90, 205, 0.25);
+}
+
+/* Subscribe-button  */
+#footer-subscribe-button {
+    color: white;
+    padding: 12px;
+    background-color: SlateBlue;
+    border-radius: 8px;
+    border: none;
+    font-size: medium;
+}
+
+#footer-subscribe-button:hover,
+#footer-subscribe-button:focus {
+    background-color: rgb(66, 51, 163);
+}
+
+/* ----Rights and social---- */
 #rights-social-flex {
+    /* rights and social flex row*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-width: 1.5px;
     border-color: lightgray;
     border-top-style: solid;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
+    margin: 1rem;
 }
 
 .social-list {
     list-style-type: none;
+    /* social list flex*/
     display: flex;
 }
 
@@ -32,16 +113,42 @@
     color: rgba(0, 0, 0, 0.6);
 }
 
-/* Mobile screen*/
+/* <<< Mobile screen >>>*/
 @media screen and (max-width: 576px) {
+    #sitemap-subscribe-flex {
+        flex-wrap: wrap;
+    }
+
+    .column {
+        flex: 50%;
+        margin-bottom: 1rem;
+    }
+
+    #Subscribe-column {
+        margin-left: 0;
+        margin-top: 1rem;
+        flex: 100%;
+    }
+
+    #flex-form {
+        flex-direction: column;
+    }
+
+    #footer-email-input {
+        width: 100%;
+    }
 
     #rights-social-flex {
+        /* rights and social flex column*/
         flex-direction: column;
+
         margin: 1rem 0.5rem;
     }
 
     .social-list {
+        /* social list flex start*/
         justify-content: flex-start;
+
     }
 
     .social-list-item {

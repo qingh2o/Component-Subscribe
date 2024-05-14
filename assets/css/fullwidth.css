@@ -1,40 +1,46 @@
-#fullwidth-signle-input {
-    margin: auto;
-    text-align: center;
+#fullwidth {
+    display: flex;
+    justify-content: center;
+}
+
+#Subscribe-fullwidth{
+flex-direction: column;
+text-align: center;
 }
 
 #h2 {
     font-size: 2.5rem;
     font-weight: 500;
-    padding: 0 1rem;
 }
 
 #p {
     font-size: 1.2rem;
-    padding: 1rem;
-
+    padding: 1rem 0;
 }
 
 /* flex container (Tablet/laptop/Desktop screen)*/
 #flex-container {
-    margin: 0.5rem;
-    display: flex;
+    margin: 1rem;
     /* Button: right on row */
-    flex-direction: row;
+    display: flex;
+    /* input-Button gap*/
+    gap: 0.75rem;
     justify-content: center;
 }
 
 #fullwidth-input {
     position: relative;
+    /* input row width*/
+    width: 65%; 
 }
 
 #email-input {
-    margin: 0.5rem;
     padding: 12px 20px 12px 40px;
     font-size: 1rem;
     border-radius: 8px;
-    min-width: 312px;
     border: 2px solid Silver;
+     /* input width*/
+    width: 100%;  
 }
 
 #email-input:active,
@@ -51,15 +57,14 @@
     /* Since the top of the icon is already positioned at 50% from the top of the container, this transform moves the icon up by 50% of its own height, effectively centering it vertically. */
     transform: translateY(-50%);
 
-    /* 16 pixels from the left edge of its containing element */
+    /* 10 pixels from the left edge of its containing element */
     left: 0;
-    margin-left: 20px;
+    margin-left: 10px;
     color: rgb(107, 105, 105);
 }
 
 #Subscribe-button {
     color: white;
-    margin: 0.5rem;
     padding: 12px;
     font-size: large;
     font-weight: 600;
@@ -83,8 +88,9 @@
     #flex-container {
         flex-direction: column;
     }
-
-    #email-input {
-        width: calc(100% - 20px);
+    
+    /* input-full width */
+    #fullwidth-input {
+        width: 100% ;
     }
 }
