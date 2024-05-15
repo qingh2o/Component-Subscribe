@@ -43,7 +43,7 @@
                         class=" mx-auto w-full max-w-lg flex flex-col space-y-3 sm:flex-row sm:space-x-3 sm:space-y-0">
                         <input type="email" aria-label="Subscribe"
                             class="h-9 rounded-lg w-full border border-gray-400 bg-white px-3 py-6 text-sm text-black focus:ring focus:ring-indigo-400"
-                            placeholder="Enter your email" required />                             
+                            placeholder="Enter your email" required />
                         <button
                             class="rounded-md p-3 bg-indigo-500 text-md font-semibold text-white shadow-sm hover:bg-indigo-400 focus:ring focus:ring-indigo-400">Subscribe</button>
                     </form>
@@ -52,6 +52,45 @@
         </section>
 
         <!-- Tailwind Component2 -->
+        <section class="component-section">
+            <!-- Container -->
+            <article class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
+                <section class="mx-auto max-w-3xl text-center">
+                    <!-- Title -->
+                    <h2 class="mb-4 text-3xl font-bold md:text-5xl"> Subscribe to our newsletter.</h2>
+                    <p class="mx-auto mb-6 max-w-lg text-sm text-gray-500 sm:text-base md:mb-12"> Get our newsletter and
+                        you will be among the first to find out about new features and components.
+                    </p>
+                    <!-- Form -->
+                    <form action=""
+                        class="flex flex-col max-w-xl mx-auto space-y-4 md:flex-row md:justify-center md:items-center md:space-y-0 md:space-x-2"
+                        method="post">
+                        <div class="relative w-full md:w-4/6">
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 20 16">
+                                    <path
+                                        d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z">
+                                    </path>
+                                    <path
+                                        d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <input type="email" id="member_email" name="email_address" aria-label="Subscribe"
+                                class="block w-full p-3 pl-11 text-base text-gray-900 bg-white border border-gray-300 rounded-md focus:ring focus:ring-blue-500"
+                                placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" id="member_submit"
+                            class="p-3 text-base font-medium text-center text-white bg-blue-700 border border-blue-700 cursor-pointer rounded-md focus:ring focus:ring-blue-500 md:w-auto">Subscribe
+                        </button>
+                    </form>
+                </section>
+            </article>
+
+        </section>
+
+        <!-- Tailwind Component3 -->
         <section class="component-section">
             <article class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -106,19 +145,17 @@
             </article>
         </section>
 
-        <!-- Tailwind Component3 -->
+        <!-- Tailwind Component4 -->
         <section class="component-section">
-            <aside
-                class="py-10 sm:py-16 bg-gray-50 lg:py-20">
+            <aside class="py-10 sm:py-16 bg-gray-50 lg:py-20">
                 <article class="px-4 mx-auto max-w-8xl">
-                    <h2
-                        class="mb-4 text-4xl md:text-6xl font-bold text-gray-900 md:text-center lg:mb-7">
+                    <h2 class="mb-4 text-4xl md:text-6xl font-bold text-gray-900 md:text-center lg:mb-7">
                         Subscribe to our newsletter</h2>
                     <p
                         class="mx-auto mb-4 max-w-3xl text-base text-gray-500 md:mb-6 md:text-center md:max-w-6xl md:text-xl lg:px-20 xl:px-56">
                         Get our newsletter and you will be among the first to find out about new features and
                         components.</p>
-
+                    <!-- Form -->
                     <form action="" class="flex max-w-xl mb-4 md:mx-auto" method="post">
                         <div class="w-full">
                             <div class="relative h-full">
